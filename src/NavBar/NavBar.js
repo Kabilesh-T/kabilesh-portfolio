@@ -6,7 +6,7 @@ import './NavBar.scss'
 const NavBar = () => (
     <div className='NavBar'>
         <div className='NavBar--brand'>
-            <Link to='/'>Trade Assist</Link>
+            <Link to='/'>Kabilesh</Link>
         </div>
         <div>
             <NavLink className='NavBar--nav' to='/home'>Home</NavLink>

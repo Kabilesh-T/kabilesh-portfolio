@@ -1,4 +1,5 @@
 import React from 'react';
+import Intro from "./Intro/Intro";
 import { Route } from "react-router-dom";
 
 import './App.scss';
@@ -8,6 +9,7 @@ function App() {
   return (
     <div className="App">
       <NavBar/>
+      <Intro/>
     </div>
   );
 }

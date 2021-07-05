@@ -3,4 +3,5 @@ $backgroundImage: "assets/background";
   height: 100vh;
   background-size: cover;
   background: url(#{$backgroundImage}.png) no-repeat center;
+  text-align: center;
 }
