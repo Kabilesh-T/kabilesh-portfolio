@@ -1,7 +1,10 @@
 $backgroundImage: "assets/background";
 .App {
-  height: 100vh;
-  background-size: cover;
-  background: url(#{$backgroundImage}.png) no-repeat center;
-  text-align: center;
+  &--intro {
+    min-height: 100vh;
+    background-size: cover;
+    justify-content: center;
+    text-align: center;
+    background: url(#{$backgroundImage}.png) no-repeat fixed center;
+  }
 }

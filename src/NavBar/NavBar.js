@@ -1,16 +1,30 @@
-import React from "react";
+import React, {useState} from "react";
 import { NavLink, Link } from "react-router-dom";
 import {Navbar, Nav, Container, NavDropdown} from 'react-bootstrap'
 import './NavBar.scss'
 
-const NavBar = () => (
-    <div className='NavBar'>
+const NavBar = () => {
+    const [scrolled, setScroll] = useState(false);
+
+    const handleScroll = () => {
+        if (window.scrollY > 80) {
+            setScroll(true);
+        }
+        else {
+            setScroll(false);
+        }
+    }
+
+    window.addEventListener('scroll', handleScroll);
+    return(
+    <div className={scrolled ? 'NavBar scroll' : 'NavBar'}>
         <div className='NavBar--brand'>
-            <Link to='/'>Kabilesh</Link>
+            <a href='#'>Kabilesh</a>
         </div>
         <div>
-            <NavLink className='NavBar--nav' to='/home'>Home</NavLink>
+            <a className='NavBar--nav' href='#'>Home</a>
+            <a className='NavBar--nav' href='#footer'>Contact</a>
         </div>
-    </div>
-);
+    </div>)
+};
 export default NavBar;

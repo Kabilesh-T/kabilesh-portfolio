@@ -20,7 +20,9 @@ const Intro = () => (
             </h1>
         </div>
         <div className="Intro--dropdown">
-            <ArrowDropDownCircleOutlinedIcon style={{fontSize: '70px'}}/>
+            <a href="#content">
+                <ArrowDropDownCircleOutlinedIcon  style={{fontSize: '70px'}}/>
+            </a>
         </div>
     </div>
 );
