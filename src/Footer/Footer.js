@@ -9,10 +9,10 @@ const Footer = () => {
             <div className="Footer--content">
                 <p className="p1">Get in touch</p>
                 <Container>
-                    <SocialIcon className="Footer--social" network='github'/>
-                    <SocialIcon className="Footer--social"  network='twitter'/>
-                    <SocialIcon className="Footer--social"  network='facebook'/>
-                    <SocialIcon className="Footer--social"  network='instagram'/>
+                    <SocialIcon target="__blank" url="https://github.com/Kabilesh-T" className="Footer--social" network='github'/>
+                    <SocialIcon target="__blank" url="https://www.linkedin.com/in/kabilesh-t-195470153/" className="Footer--social"  network='linkedin'/>
+                    <SocialIcon target="__blank" url="https://www.facebook.com/kabilesh.kb" className="Footer--social"  network='facebook'/>
+                    <SocialIcon target="__blank" url="https://www.instagram.com/_kabilesh_t/" className="Footer--social"  network='instagram'/>
                 </Container>
                 <div className="Footer--contact">
                     <p>Phone: <a href="tel:+919884966468">+91-9884966468</a></p>
