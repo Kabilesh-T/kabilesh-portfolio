@@ -8,3 +8,11 @@ $backgroundImage: "assets/background";
     background: url(#{$backgroundImage}.png) no-repeat fixed center;
   }
 }
+
+@media (max-width: 600px) {
+  .App {
+    &--intro {
+      width: 100vw;
+    }
+  }
+}

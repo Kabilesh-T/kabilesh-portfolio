@@ -3,7 +3,7 @@
   text-align: center;
   justify-content: center;
   align-items: center;
-  padding-top: 7%;
+  padding-top: 12%;
   color: #e3e3e3;
 
   h1 {
@@ -43,3 +43,16 @@
     cursor: pointer;
   }
 }
+
+@media (max-width: 600px) {
+  .Intro {
+    padding-top: 50%;
+    padding-right: 2rem;
+    padding-left: 2rem;
+
+    h1 {
+      font-size: 60px;
+    }
+  }
+}
+

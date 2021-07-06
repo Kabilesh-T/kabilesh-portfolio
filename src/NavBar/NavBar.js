@@ -1,7 +1,6 @@
 import React, {useState} from "react";
-import { NavLink, Link } from "react-router-dom";
-import {Navbar, Nav, Container, NavDropdown} from 'react-bootstrap'
 import './NavBar.scss'
+import MobileNavBar from "./MobileNavBar";
 
 const NavBar = () => {
     const [scrolled, setScroll] = useState(false);
@@ -17,14 +16,18 @@ const NavBar = () => {
 
     window.addEventListener('scroll', handleScroll);
     return(
-    <div className={scrolled ? 'NavBar scroll' : 'NavBar'}>
-        <div className='NavBar--brand'>
-            <a href='#'>Kabilesh</a>
-        </div>
-        <div>
-            <a className='NavBar--nav' href='#'>Home</a>
-            <a className='NavBar--nav' href='#footer'>Contact</a>
-        </div>
-    </div>)
+        <>
+            <div className={scrolled ? 'NavBar scroll' : 'NavBar'}>
+                <div className='NavBar--brand'>
+                    <a href='#'>Kabilesh</a>
+                </div>
+                <div>
+                    <a className='NavBar--nav' href='#'>Home</a>
+                    <a className='NavBar--nav' href='#footer'>Contact</a>
+                </div>
+            </div>
+            <MobileNavBar/>
+        </>
+    )
 };
 export default NavBar;
