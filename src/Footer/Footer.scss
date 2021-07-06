@@ -39,3 +39,11 @@
     cursor: pointer;
   }
 }
+
+@media (max-width: 600px) {
+  .Footer {
+    &--social {
+      margin-bottom: 2rem;
+    }
+  }
+}
