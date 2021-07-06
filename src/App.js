@@ -5,7 +5,6 @@ import './App.scss';
 import NavBar from "./NavBar/NavBar";
 import Content from "./Content/Content";
 import Footer from "./Footer/Footer"
-import Image from "./Image/Image";
 
 function App() {
   return (
@@ -14,8 +13,6 @@ function App() {
             <NavBar/>
             <Intro/>
         </div>
-        <Content/>
-        <Image number={2}/>
         <Content/>
         <Footer/>
     </div>
