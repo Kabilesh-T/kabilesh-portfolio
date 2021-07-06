@@ -1,0 +1,26 @@
+$backgroundImage: "../assets/background";
+$backgroundImage2: "../assets/bg2";
+$backgroundImage3: "../assets/bg3";
+.Image1 {
+  min-height: 100vh;
+  background-size: cover;
+  justify-content: center;
+  text-align: center;
+  background: url(#{$backgroundImage}.png) no-repeat fixed center;
+}
+
+.Image2 {
+  min-height: 100vh;
+  background-size: cover;
+  justify-content: center;
+  text-align: center;
+  background: url(#{$backgroundImage2}.jpg) no-repeat fixed center;
+}
+
+.Image3 {
+  min-height: 100vh;
+  justify-content: center;
+  display: block;
+  text-align: center;
+  background: url(#{$backgroundImage3}.jpg) no-repeat fixed center;
+}

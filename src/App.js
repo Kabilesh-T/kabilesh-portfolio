@@ -1,13 +1,20 @@
 import React from 'react';
-import { Route } from "react-router-dom";
+import Intro from "./Intro/Intro";
 
 import './App.scss';
 import NavBar from "./NavBar/NavBar";
+import Content from "./Content/Content";
+import Footer from "./Footer/Footer"
 
 function App() {
   return (
     <div className="App">
-      <NavBar/>
+        <div className="App--intro">
+            <NavBar/>
+            <Intro/>
+        </div>
+        <Content/>
+        <Footer/>
     </div>
   );
 }
